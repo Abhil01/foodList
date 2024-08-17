@@ -1,9 +1,9 @@
 import Item from "./Item";
-function List({ items })
-{
+function List({ items , toRemove })
+{  
     return <ul className="list-group"> 
     {items.map((item)=> 
-      <Item fooditem={item}></Item> 
+      <Item fooditem={item} itemRemove={toRemove}></Item> 
   )}
     </ul>
 }
